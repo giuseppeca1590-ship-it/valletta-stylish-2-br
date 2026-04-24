@@ -388,7 +388,7 @@ nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid va
 </div>
 
 <script>
-var PIN='482619',gate=document.getElementById('pinGate'),gb=document.getElementById('gbContent'),inp=document.getElementById('pgInput'),btn=document.getElementById('pgBtn'),err=document.getElementById('pgErr');
+var PIN='825971',gate=document.getElementById('pinGate'),gb=document.getElementById('gbContent'),inp=document.getElementById('pgInput'),btn=document.getElementById('pgBtn'),err=document.getElementById('pgErr');
 function unlock(){gate.style.display='none';gb.style.display='block';try{localStorage.setItem('arco_vs2','1');}catch(e){}}
 try{if(localStorage.getItem('arco_vs2')==='1'){unlock();}}catch(e){}
 function check(){var v=(inp.value||'').replace(/[^0-9]/g,'');if(v===PIN){unlock();}else{err.classList.add('on');inp.classList.add('error');inp.value='';setTimeout(function(){err.classList.remove('on');inp.classList.remove('error');},2500);}}
